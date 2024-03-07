@@ -1,0 +1,140 @@
+body {
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: repeat(2, 1fr) repeat(3, 1fr);
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+    color: black;
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+footer {
+    background-color: #6495ED;
+    font-weight: bold;
+    grid-row: 5;
+    grid-column: 1/-1;
+}
+
+
+section {
+    padding: 20px;
+}
+
+#lewy, #prawy, #pierwszy, #trzeci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lewy {
+    background-color: white;
+    grid-row: 2;
+    grid-column: 1/ span 2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 700px; 
+    overflow: hidden;
+}
+
+#prawy {
+    background-color: darkred;
+    grid-row: 2;
+    grid-column: 3/ -1;
+}
+
+#pierwszy {
+    background-color: white;
+    grid-row: 3;
+    grid-column: 1/ 2
+}
+
+#drugi {
+    background-color: white;
+    grid-row: 3;
+    grid-column: 2/ 4;
+}
+
+#trzeci {
+    background-color: #1E90FF;
+    grid-row: 3;
+    grid-column: 4/ -1;
+}
+
+dolny {
+    background-color: white;
+    font-weight: bold;
+    grid-row: 4;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 70%;
+    max-width: 600px;
+    margin-left: 1px;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: -15px;
+    border-collapse: collapse;
+}
+
+#lewy table {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: -15px;
+    border-collapse: collapse;
+}
+
+
+td, th {
+    border: 1px solid black;
+}
+
+form {
+    color: white;
+    margin-top: 20px;
+}
+
+.border-text {
+    border: 3px solid lightgray;
+    margin: 10px;
+}
+
+
+.form-section {
+    margin-bottom: 10px;
+}
+
+
+.radio-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#scrollbox {
+    overflow: scroll;
+    width: 600px;
+    height: 100px;
+}
+
+#calculate-btn {
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: 2px;
+    border-bottom: black;
+}
